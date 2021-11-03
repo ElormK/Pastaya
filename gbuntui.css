@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #24252a;
+  font-family: "Zen Loop", sans-serif;
+  /* font-weight: 400; */
+  font-size: 30px;
+  color: #ecf0f1;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+li,
+a,
+button {
+  font-family: "Zen Loop", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  color: #ecf0f1;
+  text-decoration: none;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo {
+  width: 90px;
+  object-fit: contain;
+}
+
+.nav__links {
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.nav__links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav__links li a {
+  transition: all ease 0.3s;
+}
+
+.nav__links li a:hover {
+  color: #0088a9;
+}
+
+button {
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0;
+}
+
+button:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+.menu__div {
+  padding: 5em;
+  background-image: url(images/hz.PNG);
+  /* background-size: contain; */
+  background-repeat: no-repeat;
+}
+h3 {
+  font-weight: 400;
+}
+
+.about__div {
+  background-image: url(images/hz.PNG);
+  background-repeat: no-repeat;
+  padding: 5em;
+  padding-top: 20px;
+}
+.slideshow {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.slidehow-item {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  /* opacity: 0; */
+}
+
+.slidehow-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slideshow-item-text {
+  max-width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50);
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+  padding: 10rem 5rem;
+
+}
+

@@ -1,0 +1,16 @@
+{
+  "folders": [
+	{
+		"path": "..\\How Far is the Sun"
+	},
+	{
+		"path": "."
+	},
+	{
+		"path": "..\\Unsplash"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "RestaurantSite"
+  }
+}

@@ -1,0 +1,151 @@
+@font-face {
+  font-family: dancing;
+  src: url(DancingScript-VariableFont_wght.ttf);
+}
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: dancing;
+}
+
+body {
+  color: black;
+  margin: 0;
+  padding: 0;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: dancing;
+}
+
+header {
+  box-sizing: border-box;
+  min-height: 100vh;
+  position: relative;
+  transform-style: inherit;
+  width: 100vw;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+header h1 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+header,
+header:before {
+  background: 50% 50% / cover;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  background: url(1.jpg);
+  background-size: cover;
+  transform-origin: center center 0;
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  z-index: 2;
+  position: absolute;
+  top: 100vh;
+  background: black;
+  line-height: 30px;
+  font-weight: lighter;
+  padding: 0px;
+  margin: 0;
+  color: white;
+}
+
+.about {
+  padding-bottom: 40px;
+  background-color: gray;
+  left: 0;
+}
+h1 {
+  color: black;
+  margin: 0;
+  padding: 40px;
+  font-size: 40px;
+}
+
+.food_photo {
+  padding-bottom: 40px;
+  padding-top: 40px;
+  right: 0;
+  background-repeat: no-repeat;
+  background-image: url(food_photo.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.real_photo {
+  width: 500px;
+}
+
+.side-to-side {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.side-to-side > *:nth-child(1) {
+  flex: 1 1 50%;
+  min-width: 40ch;
+}
+.side-to-side > *:nth-child(2) {
+  flex: 1 1 50%;
+}
+
+.menu-order {
+  display: flex;
+  flex-wrap: wrap;
+}
+.menu-order > *:nth-child(1) {
+  flex: 1 1 50%;
+}
+.menu-order > *:nth-child(2) {
+  flex: 1 1 50%;
+}
+
+.floor {
+  display: flex;
+}
+.floor > *:nth-child(1) {
+  flex: 1 1 30%;
+}
+.floor > *:nth-child(2) {
+  flex: 1 1 30%;
+}
+.floor > *:nth-child(3) {
+  flex: 1 1 30%;
+}
+.elements {
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  font-size: 35px;
+}
